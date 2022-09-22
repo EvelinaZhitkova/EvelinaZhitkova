@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Нажать" FontSize="22" Width="200" Height="80" Click="Button_Click" />
+        <Button Content="Нажать" FontSize="22" Width="198" Height="50" Click="Button_Click" />
+        <Button x:Name="Btn1" Height="50" Width="200" Content="Обычная кнопка">
+            <Button.Background>
+                <LinearGradientBrush>
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="LightBlue" Offset="0" />
+                        <GradientStop Color="DarkBlue" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
+    
 </Window>
